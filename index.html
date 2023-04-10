@@ -11074,6 +11074,17 @@ html {
   -webkit-text-fill-color: transparent;
 }
 
+.card-body {
+  position: relative;
+}
+
+.socials {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
 aside,
 section {
   padding-top: 5rem;
@@ -11393,7 +11404,7 @@ footer a:hover, footer a:active, footer a:focus {
 <body>
 	<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
 		<div class="container">
-			<a class="navbar-brand" href="#" ><img alt="" class="img-fluid" width="75" height="75" src="{% static 'img/logo.png' %}"><span style="color:#8860D0">Fit</span>Win</a> <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
+			<a class="navbar-brand" href="#" ><img alt="" class="img-fluid" width="75" height="75" src="./logo.png"><span style="color:#8860D0">Fit</span>Win</a> <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
 					<li class="nav-item">
@@ -11422,13 +11433,14 @@ footer a:hover, footer a:active, footer a:focus {
 		
 		<div class="carousel-inner">
 			<div class="carousel-item active">
-				<img alt="..." class="d-block w-100" src="{% static 'img/home-1.jpg' %}">
+				<img alt="..." class="d-block w-100" src="./home-1.jpg">
 				<div class="carousel-caption">
 					<h5>FitWin</h5>
 					<p>Encuentra los entrenadores que mejor se adapten a ti y ponte en forma</p>
 					<br>
 
 					<p><a class="btn btn-outline-light mt-3" href="#contact">Más información</a></p>
+					<p><a class="btn btn-outline-light mt-3" href="#contact">Despliegues</a></p>
 
 					<br>
 					<br>
@@ -11446,7 +11458,7 @@ footer a:hover, footer a:active, footer a:focus {
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-4 col-md-12 col-12">
-					<div class="about-img"><img alt="" class="img-fluid" src="{% static 'img/entrenador-personal.jpg' %}"></div>
+					<div class="about-img"><img alt="" class="img-fluid" src="./entrenador-personal.jpg"></div>
 				</div>
 				<div class="col-lg-8 col-md-12 col-12 ps-lg-5 mt-md-5">
 					<div class="about-text">
@@ -11480,15 +11492,15 @@ footer a:hover, footer a:active, footer a:focus {
 							<p class="lead">
 								<ul>
 									<br>
-									<li type="circle">
+									<li type="circle" style="list-style: none; padding-right: 1.5rem;">
 										Creación de anuncios personalizados
 									</li>
 									<br>
-									<li type="circle">
+									<li type="circle" style="list-style: none; padding-right: 1.5rem;">
 										Organización de entrenamientos
 									</li>
 									<br>
-									<li type="circle">
+									<li type="circle" style="list-style: none; padding-right: 1.5rem;">
 										Calendario de clases
 										
 									</li>
@@ -11509,15 +11521,15 @@ footer a:hover, footer a:active, footer a:focus {
 							<p class="lead">
 								<ul>
 									<br>
-									<li type="circle">
+									<li type="circle" style="list-style: none; padding-right: 1.5rem;">
 										Búsqueda de entrenadores mediante sistema de valoración y recomendación
 									</li>
 									<br>
-									<li type="circle">
+									<li type="circle" style="list-style: none; padding-right: 1.5rem;">
 										Calendario de clases
 									</li>
 									<br>
-									<li type="circle">
+									<li type="circle" style="list-style: none; padding-right: 1.5rem;">
 										Pago online mediante al app
 									</li>
 									
@@ -11536,15 +11548,15 @@ footer a:hover, footer a:active, footer a:focus {
 							<h3 class="card-title">Otros servicios</h3>
 							<p class="lead">
 								<ul>
-									<li type="circle">
+									<li type="circle" style="list-style: none; padding-right: 1.5rem;">
 										Integración con redes sociales
 									</li>
 									<br>
-									<li type="circle">
+									<li type="circle" style="list-style: none; padding-right: 1.5rem;">
 										Integración con google calendar
 									</li>
 									<br>
-									<li type="circle">
+									<li type="circle" style="list-style: none; padding-right: 1.5rem;">
 										Filtros de búsqueda para un mayor grado de individualización en los entrenamientos
 									</li>
 									<br>
@@ -11563,7 +11575,7 @@ footer a:hover, footer a:active, footer a:focus {
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-4 col-md-12 col-12">
-					<div class="about-img"><img alt="" class="img-fluid" src="{% static 'img/software.jpg' %}"></div>
+					<div class="about-img"><img alt="" class="img-fluid" src="./software.jpg"></div>
 				</div>
 				<div class="col-lg-8 col-md-12 col-12 ps-lg-5 mt-md-5">
 					<div class="about-text">
@@ -11589,9 +11601,9 @@ footer a:hover, footer a:active, footer a:focus {
 			</div>
 			<div class="row">
 				<div class="col-12 col-md-6 col-lg-3">
-					<div class="card text-center" style="height: 400px">
+					<div class="card text-center" style="height: 430px">
 						<div class="card-body">
-							<img alt="" class="img-fluid rounded-circle" src="{% static 'img/nacho.jpg' %}" width="150" height="150">
+							<img alt="" class="img-fluid rounded-circle" src="./nacho.jpg" width="150" height="150">
 							<h3 class="card-title py-2">Ignacio Jordano</h3>
 							<p class="card-text"><strong>Contacto:</strong> ignjorde@alum.us.es</p>
 							<p class="socials"><i class="bi bi-twitter text-dark mx-1"></i> <i class="bi bi-facebook text-dark mx-1"></i> <i class="bi bi-linkedin text-dark mx-1"></i> <i class="bi bi-instagram text-dark mx-1"></i></p>
@@ -11599,9 +11611,9 @@ footer a:hover, footer a:active, footer a:focus {
 					</div>
 				</div>
 				<div class="col-12 col-md-6 col-lg-3">
-					<div class="card text-center" style="height: 400px">
+					<div class="card text-center" style="height: 430px">
 						<div class="card-body">
-							<img alt="" class="img-fluid rounded-circle" src="{% static 'img/jesus.jpg' %}" width="150" height="150">
+							<img alt="" class="img-fluid rounded-circle" src="./jesus.jpg" width="150" height="150">
 							<h3 class="card-title py-2">Jesús Páez</h3>
 							<p class="card-text"><strong>Contacto:</strong> jespaepae@alum.us.es</p>
 							<p class="socials"><i class="bi bi-twitter text-dark mx-1"></i> <i class="bi bi-facebook text-dark mx-1"></i> <i class="bi bi-linkedin text-dark mx-1"></i> <i class="bi bi-instagram text-dark mx-1"></i></p>
@@ -11609,9 +11621,9 @@ footer a:hover, footer a:active, footer a:focus {
 					</div>
 				</div>
 				<div class="col-12 col-md-6 col-lg-3">
-					<div class="card text-center" style="height: 400px">
+					<div class="card text-center" style="height: 430px">
 						<div class="card-body">
-							<img alt="" class="img-fluid rounded-circle" src="{% static 'img/borja.jpg' %}" width="150" height="150">
+							<img alt="" class="img-fluid rounded-circle" src="./borja.jpg" width="150" height="150">
 							<h3 class="card-title py-2">Borja Piñero</h3>
 							<p class="card-text"><strong>Contacto:</strong> borpincal@alum.us.es</p>
 							<p class="socials"><i class="bi bi-twitter text-dark mx-1"></i> <i class="bi bi-facebook text-dark mx-1"></i> <i class="bi bi-linkedin text-dark mx-1"></i> <i class="bi bi-instagram text-dark mx-1"></i></p>
@@ -11619,9 +11631,9 @@ footer a:hover, footer a:active, footer a:focus {
 					</div>
 				</div>
 				<div class="col-12 col-md-6 col-lg-3">
-					<div class="card text-center" style="height: 400px">
+					<div class="card text-center" style="height: 430px">
 						<div class="card-body">
-							<img alt="" class="img-fluid rounded-circle" src="{% static 'img/juanjo.jpg' %}" width="150" height="150">
+							<img alt="" class="img-fluid rounded-circle" src="./juanjo.jpg" width="150" height="150">
 							<h3 class="card-title py-2">Juan José Casamitjana</h3>
 							<p class="card-text"><strong>Contacto:</strong> juacasben@alum.us.es</p>
 							<p class="socials"><i class="bi bi-twitter text-dark mx-1"></i> <i class="bi bi-facebook text-dark mx-1"></i> <i class="bi bi-linkedin text-dark mx-1"></i> <i class="bi bi-instagram text-dark mx-1"></i></p>
@@ -11632,9 +11644,9 @@ footer a:hover, footer a:active, footer a:focus {
 			<br>
 			<div class="row">
 				<div class="col-12 col-md-6 col-lg-3">
-					<div class="card text-center" style="height: 400px">
+					<div class="card text-center" style="height: 430px">
 						<div class="card-body">
-							<img alt="" class="img-fluid rounded-circle" src="{% static 'img/victor.jpg' %}" width="150" height="150">
+							<img alt="" class="img-fluid rounded-circle" src="./victor.jpg" width="150" height="150">
 							<h3 class="card-title py-2">Victor Graván</h3>
 							<p class="card-text"><strong>Contacto:</strong> vicgrabru@alum.us.es</p>
 							<p class="socials"><i class="bi bi-twitter text-dark mx-1"></i> <i class="bi bi-facebook text-dark mx-1"></i> <i class="bi bi-linkedin text-dark mx-1"></i> <i class="bi bi-instagram text-dark mx-1"></i></p>
@@ -11642,9 +11654,9 @@ footer a:hover, footer a:active, footer a:focus {
 					</div>
 				</div>
 				<div class="col-12 col-md-6 col-lg-3">
-					<div class="card text-center" style="height: 400px">
+					<div class="card text-center" style="height: 430px">
 						<div class="card-body">
-							<img alt="" class="img-fluid rounded-circle" src="{% static 'img/edu.jpg' %}" width="150" height="150">
+							<img alt="" class="img-fluid rounded-circle" src="./edu.jpg" width="150" height="150">
 							<h3 class="card-title py-2">Eduardo Ciezar</h3>
 							<p class="card-text"><strong>Contacto:</strong> educielan@alum.us.es</p>
 							<p class="socials"><i class="bi bi-twitter text-dark mx-1"></i> <i class="bi bi-facebook text-dark mx-1"></i> <i class="bi bi-linkedin text-dark mx-1"></i> <i class="bi bi-instagram text-dark mx-1"></i></p>
@@ -11652,9 +11664,9 @@ footer a:hover, footer a:active, footer a:focus {
 					</div>
 				</div>
 				<div class="col-12 col-md-6 col-lg-3">
-					<div class="card text-center" style="height: 400px">
+					<div class="card text-center" style="height: 430px">
 						<div class="card-body">
-							<img alt="" class="img-fluid rounded-circle" src="{% static 'img/raul.jpg' %}" width="150" height="150">
+							<img alt="" class="img-fluid rounded-circle" src="./raul.jpg" width="150" height="150">
 							<h3 class="card-title py-2">Raúl Gallardo</h3>
 							<p class="card-text"><strong>Contacto:</strong> raugalroc@alum.us.es</p>
 							<p class="socials"><i class="bi bi-twitter text-dark mx-1"></i> <i class="bi bi-facebook text-dark mx-1"></i> <i class="bi bi-linkedin text-dark mx-1"></i> <i class="bi bi-instagram text-dark mx-1"></i></p>
@@ -11662,9 +11674,9 @@ footer a:hover, footer a:active, footer a:focus {
 					</div>
 				</div>
 				<div class="col-12 col-md-6 col-lg-3">
-					<div class="card text-center" style="height: 400px">
+					<div class="card text-center" style="height: 430px">
 						<div class="card-body">
-							<img alt="" class="img-fluid rounded-circle" src="{% static 'img/pablo.jpg' %}" width="150" height="150">
+							<img alt="" class="img-fluid rounded-circle" src="./pablo.jpg" width="150" height="150">
 							<h3 class="card-title py-2">Pablo Ramos</h3>
 							<p class="card-text"><strong>Contacto:</strong> pabramber@alum.us.es</p>
 							<p class="socials"><i class="bi bi-twitter text-dark mx-1"></i> <i class="bi bi-facebook text-dark mx-1"></i> <i class="bi bi-linkedin text-dark mx-1"></i> <i class="bi bi-instagram text-dark mx-1"></i></p>
@@ -11675,9 +11687,9 @@ footer a:hover, footer a:active, footer a:focus {
 			<br>
 			<div class="row">
 				<div class="col-12 col-md-6 col-lg-3">
-					<div class="card text-center" style="height: 400px">
+					<div class="card text-center" style="height: 430px">
 						<div class="card-body">
-							<img alt="" class="img-fluid rounded-circle" src="{% static 'img/nuria.jpg' %}" width="150" height="150">
+							<img alt="" class="img-fluid rounded-circle" src="./nuria.jpg" width="150" height="150">
 							<h3 class="card-title py-2">Nuria Gómez</h3>
 							<p class="card-text"><strong>Contacto:</strong> nurgomari@alum.us.es</p>
 							<p class="socials"><i class="bi bi-twitter text-dark mx-1"></i> <i class="bi bi-facebook text-dark mx-1"></i> <i class="bi bi-linkedin text-dark mx-1"></i> <i class="bi bi-instagram text-dark mx-1"></i></p>
@@ -11685,9 +11697,9 @@ footer a:hover, footer a:active, footer a:focus {
 					</div>
 				</div>
 				<div class="col-12 col-md-6 col-lg-3">
-					<div class="card text-center" style="height: 400px">
+					<div class="card text-center" style="height: 430px">
 						<div class="card-body">
-							<img alt="" class="img-fluid rounded-circle" src="{% static 'img/alberto.jpg' %}" width="150" height="150">
+							<img alt="" class="img-fluid rounded-circle" src="./alberto.jpg" width="150" height="150">
 							<h3 class="card-title py-2">Alberto Antonio Tokos</h3>
 							<p class="card-text"><strong>Contacto:</strong> albtokmat@alum.us.es</p>
 							<p class="socials"><i class="bi bi-twitter text-dark mx-1"></i> <i class="bi bi-facebook text-dark mx-1"></i> <i class="bi bi-linkedin text-dark mx-1"></i> <i class="bi bi-instagram text-dark mx-1"></i></p>
@@ -11695,9 +11707,9 @@ footer a:hover, footer a:active, footer a:focus {
 					</div>
 				</div>
 				<div class="col-12 col-md-6 col-lg-3">
-					<div class="card text-center" style="height: 400px">
+					<div class="card text-center" style="height: 430px">
 						<div class="card-body">
-							<img alt="" class="img-fluid rounded-circle" src="{% static 'img/maria.jpg' %}" width="150" height="150">
+							<img alt="" class="img-fluid rounded-circle" src="./maria.jpg" width="150" height="150">
 							<h3 class="card-title py-2">María Remedios Zoido</h3>
 							<p class="card-text"><strong>Contacto:</strong> marzoiras@alum.us.es</p>
 							<p class="socials"><i class="bi bi-twitter text-dark mx-1"></i> <i class="bi bi-facebook text-dark mx-1"></i> <i class="bi bi-linkedin text-dark mx-1"></i> <i class="bi bi-instagram text-dark mx-1"></i></p>
@@ -11705,9 +11717,9 @@ footer a:hover, footer a:active, footer a:focus {
 					</div>
 				</div>
 				<div class="col-12 col-md-6 col-lg-3">
-					<div class="card text-center" style="height: 400px">
+					<div class="card text-center" style="height: 430px">
 						<div class="card-body">
-							<img alt="" class="img-fluid rounded-circle" src="{% static 'img/juan-antonio.jpg' %}" width="150" height="150">
+							<img alt="" class="img-fluid rounded-circle" src="./juan-antonio.jpg" width="150" height="150">
 							<h3 class="card-title py-2">Juan Antonio Ortiz</h3>
 							<p class="card-text"><strong>Contacto:</strong> juaortgue@alum.us.es</p>
 							<p class="socials"><i class="bi bi-twitter text-dark mx-1"></i> <i class="bi bi-facebook text-dark mx-1"></i> <i class="bi bi-linkedin text-dark mx-1"></i> <i class="bi bi-instagram text-dark mx-1"></i></p>
@@ -11735,8 +11747,6 @@ footer a:hover, footer a:active, footer a:focus {
 				</div>
 				<div class="col-lg-6 mb-5 mb-lg-0">
 					<h4>Despliegues</h4>
-					<a class="text-white mx-1" href="https://fitwin.onrender.com/">Devising a Project</a>
-					<br>
 					<a class="text-white mx-1" href="https://fitwin-s1.onrender.com/">Sprint 1</a>
 					<br>
 					<a class="text-white mx-1" href="https://fitwin-s2.onrender.com/">Sprint 2</a>
